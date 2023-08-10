@@ -2,9 +2,22 @@
   "name": "markdown-image-to-base64",
   "version": "0.0.1",
   "description": "markdown image convert to base64",
-  "main": "index.js",
+  "bin": {
+    "mitb": "./bin",
+    "markdown-image-to-base64": "./bin"
+  },
+  "exports": {
+    "import": "./esm/index.js",
+    "require": "./lib/index.js"
+  },
+  "files": [
+    "index.js",
+    "/lib"
+  ],
   "scripts": {
-    "test": "cd test && node index.js"
+    "test": "cd test && node index.js",
+    "dev": "rollup -c ./rollup.config.js -w -m",
+    "build": "rollup -c ./rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +37,10 @@
   "dependencies": {
     "node-fetch": "2",
     "signale": "^1.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "rollup": "^3.28.0"
   }
 }
