@@ -1,0 +1,28 @@
+{
+  "name": "markdown-image-to-base64",
+  "version": "0.0.1",
+  "description": "markdown image convert to base64",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisSong1994/markdown-image-to-base64.git"
+  },
+  "keywords": [
+    "markdown",
+    "base64",
+    "image"
+  ],
+  "author": "ChrisSong1994",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisSong1994/markdown-image-to-base64/issues"
+  },
+  "homepage": "https://github.com/ChrisSong1994/markdown-image-to-base64#readme",
+  "dependencies": {
+    "node-fetch": "2",
+    "signale": "^1.4.0"
+  }
+}
